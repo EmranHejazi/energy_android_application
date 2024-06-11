@@ -45,7 +45,7 @@ To use Energy App, follow these simple steps:
 
 The project structure is organized as follows:
 
-```
+```plaintext
 energy/
 |-- app/
 |   |-- src/
@@ -92,13 +92,43 @@ graph TD;
     E --> F[Data Model];
 ```
 
+#### RecyclerView Functionality
+
+The RecyclerView functions as follows:
+
+| Step        | Description                                              |
+|-------------|----------------------------------------------------------|
+| 1. Populate | The RecyclerView is populated with exercise items.       |
+| 2. Display  | Exercise items are displayed on the main screen.         |
+| 3. Interaction | Users can interact with each exercise item to view detailed actions. |
+
 ### Splash Screen
 
 A splash screen is implemented to provide users with a smooth transition when launching the app.
 
-### Customization
+```mermaid
+sequenceDiagram
+SplashScreen->>MainActivity: Show splash screen
+MainActivity->>SplashScreen: Transition to main activity
+```
 
-Users can customize the font size and other settings through the Settings page accessible from the navigation drawer.
+### Activity Diagram
+
+Here's a diagram illustrating all activities and their relationships in Energy App:
+
+```mermaid
+graph TD;
+    SplashScreen --> MainActivity;
+    MainActivity --> ContentActivity;
+    MainActivity --> ActionsActivity;
+    MainActivity --> AboutActivity;
+    MainActivity --> SettingsActivity;
+    MainActivity --> SplashActivity;
+```
+
+### SharedPreferences
+
+SharedPreferences is used in Energy App to store user preferences such as font size and theme color. This allows users to customize their experience within the app.
 
 ## Contributing
 
@@ -116,4 +146,4 @@ Energy App is licensed under the MIT License. See the [LICENSE](LICENSE) file fo
 
 Thank you for choosing Emran Hejazi to develop this app! I hope you have a really good presentation for this app. If you have any questions or feedback, please don't hesitate to reach out to me.
 
-**Developed by the Emran Hejazi**
+**Developed by Emran Hejazi**
