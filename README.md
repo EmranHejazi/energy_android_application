@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/EmranHejazi/energy_android_application">
-    <img src="logo.png" alt="Logo" width="80" height="80">
+    <img src="app/src/main/res/drawable-hdpi/ic_launcher_foreground.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">ENERY APPLICATION</h3>
