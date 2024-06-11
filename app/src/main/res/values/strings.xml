@@ -1,0 +1,52 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Energy</string>
+
+    <!-- Content Descriptions -->
+    <string name="content_description_logo">Logo of the energy application</string>
+    <string name="content_description_arrow_back">Back icon</string>
+    <string name="content_description_menu_button">Menu icon</string>
+    <string name="content_description_exercises_image">Exercises image</string>
+    <string name="content_description_plus">Plus icon</string>
+    <string name="content_description_minus">Minus icon</string>
+    <string name="content_description_action_image">Action Image</string>
+
+    <!-- Navigation Items -->
+    <string name="navigation_item_settings">تنظیمات</string>
+    <string name="navigation_item_about">درباره ما</string>
+
+    <!-- EditText Hint -->
+    <string name="edit_text_hint_search">جستجو...</string>
+
+    <!-- Banner Words -->
+    <string name="banner_word_ene">ene</string>
+    <string name="banner_word_rgy">rgy</string>
+
+    <!-- Exercise Names -->
+    <string name="exercise_name_chest">سینه</string>
+    <string name="exercise_name_arms">بازو</string>
+    <string name="exercise_name_legs">پا</string>
+
+    <!-- Action Titles -->
+    <string name="action_title_barbell_chest_press">پرس سینه هالتر</string>
+    <string name="action_title_barbell_up_chest_press">پرس بالا سینه هالتر</string>
+    <string name="action_title_dumbbell_chest_press">پرس سینه دمبل</string>
+    <string name="action_title_fly_device">فلای دستگاه</string>
+
+    <!-- Action Content -->
+    <string name="action_content_barbell_chest_press">لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفا به مشتری یا صاحب کار خود نشان دهند که صفحه طراحی یا صفحه بندی شده بعد از اینکه متن در آن قرار گیرد چگونه به نظر می‌رسد و قلم‌ها و اندازه‌بندی‌ها چگونه در نظر گرفته شده‌است. از آنجایی که طراحان عموما نویسنده متن نیستند و وظیفه رعایت حق تکثیر متون را ندارند و در همان حال کار آنها به نوعی وابسته به متن می‌باشد آنها با استفاده از محتویات ساختگی، صفحه گرافیکی خود را صفحه‌آرایی می‌کنند تا مرحله طراحی و صفحه‌بندی را به پایان برند.</string>
+
+    <!-- Other Activity Titles and Text -->
+    <string name="exercises_row_title">حرکات</string>
+    <string name="title_activity_settings">تنظیمات</string>
+    <string name="label_seek_bar_font_size">اندازه متن</string>
+    <string name="title_activity_about">درباره ما</string>
+    <string name="title_activity_actions">حرکات</string>
+    <string name="about_text">لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفا به مشتری یا صاحب کار خود نشان دهند که صفحه طراحی یا صفحه بندی شده بعد از اینکه متن در آن قرار گیرد چگونه به نظر می‌رسد و قلم‌ها و اندازه‌بندی‌ها چگونه در نظر گرفته شده‌است. از آنجایی که طراحان عموما نویسنده متن نیستند و وظیفه رعایت حق تکثیر متون را ندارند و در همان حال کار آنها به نوعی وابسته به متن می‌باشد آنها با استفاده از محتویات ساختگی، صفحه گرافیکی خود را صفحه‌آرایی می‌کنند تا مرحله طراحی و صفحه‌بندی را به پایان برند.</string>
+
+    <!-- Undefined Names -->
+    <string name="undefined_name">نام تعریف نشده</string>
+
+    <!-- Default String -->
+    <string name="hello_world">Hello World</string>
+</resources>

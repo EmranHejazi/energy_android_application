@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    tools:context=".activities.SettingsActivity">
+
+    <include layout="@layout/component_appbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yekan_bakh_bold"
+        android:text="@string/title_activity_settings"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="70sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:text="@string/label_seek_bar_font_size"
+            android:textColor="@color/blue" />
+
+        <SeekBar
+            android:id="@+id/seek_bar_font_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="24"
+            android:min="12"
+            android:progressBackgroundTint="@color/blue"
+            android:progressTint="@color/blue"
+            android:thumbTint="@color/blue" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:paddingHorizontal="10dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/content_description_plus"
+            android:src="@drawable/ic_plus"
+            app:tint="@color/blue" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/content_description_minus"
+            android:src="@drawable/ic_minus"
+            app:tint="@color/blue" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

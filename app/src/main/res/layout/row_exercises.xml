@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/gradient_left_to_right"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/image_view_exercise"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:contentDescription="@string/content_description_exercises_image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_exercise_arms" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/yekan_bakh_bold"
+            android:text="@string/exercises_row_title"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/text_view_exercise_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:fontFamily="@font/yekan_bakh_bold"
+            android:text="@string/exercises_row_title"
+            android:textAlignment="center"
+            android:textColor="@color/red"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
