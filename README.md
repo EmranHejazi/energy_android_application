@@ -11,7 +11,7 @@
     an android application for an academy presentation!
 </div>
 
-# Energy App
+# Welcome
 
 Welcome to Energy App! This application is designed to provide users with information about various exercises and actions to help them maintain a healthy lifestyle. Whether you're a beginner or an experienced fitness enthusiast, Energy App has something for everyone.
 
