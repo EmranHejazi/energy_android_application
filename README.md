@@ -159,4 +159,4 @@ Energy App is licensed under the MIT License. See the [LICENSE](LICENSE) file fo
 
 Thank you for choosing Emran Hejazi to develop this app! I hope you have a really good presentation for this app. If you have any questions or feedback, please don't hesitate to reach out to me.
 
-**Developed by Emran Hejazi**
+**All rights reserved by Emran Hejazi© Summer 2024**
