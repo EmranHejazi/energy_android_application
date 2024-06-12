@@ -17,8 +17,9 @@
         android:gravity="start">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
             android:contentDescription="@string/navigation_item_settings"
             android:src="@drawable/ic_gear"
             app:tint="@color/black" />
@@ -45,8 +46,9 @@
         android:gravity="start">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
             android:contentDescription="@string/navigation_item_about"
             android:src="@drawable/ic_clipboard"
             app:tint="@color/black" />

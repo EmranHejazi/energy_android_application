@@ -7,6 +7,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -46,6 +50,17 @@ public class SplashActivity extends AppCompatActivity {
 
         // Hide both the status bar and bottom navigation bar for full-screen experience
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN);
+
+        // Find the views
+        ImageView imageView = findViewById(R.id.logo);
+        TextView textView = findViewById(R.id.app_name);
+
+        // Load the animations
+        Animation alpha = AnimationUtils.loadAnimation(this, R.anim.alpha);
+
+        // Start the animations
+        imageView.startAnimation(alpha);
+        textView.startAnimation(alpha);
 
         // Simulate a splash screen delay using a Handler
         new Handler().postDelayed(() -> {

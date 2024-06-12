@@ -10,12 +10,14 @@
     tools:context=".activities.SplashActivity">
 
     <ImageView
+        android:id="@+id/logo"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:contentDescription="@string/content_description_logo"
         android:src="@drawable/ic_launcher_foreground" />
 
     <TextView
+        android:id="@+id/app_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/yekan_bakh_fat"
@@ -23,6 +25,5 @@
         android:textAllCaps="true"
         android:textColor="@color/white"
         android:textSize="30sp" />
-
 
 </LinearLayout>
