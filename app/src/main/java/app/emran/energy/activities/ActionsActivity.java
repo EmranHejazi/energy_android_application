@@ -26,11 +26,6 @@ import app.emran.energy.models.Exercise;
  */
 public class ActionsActivity extends AppCompatActivity {
 
-    // RecyclerView to display actions
-    RecyclerView actionsRecyclerView;
-    // Adapter for the actions RecyclerView
-    ActionsAdapter actionsAdapter;
-
     /**
      * Called when the activity is starting. This is where most initialization should go.
      *
@@ -70,11 +65,11 @@ public class ActionsActivity extends AppCompatActivity {
             title.setText(getString(R.string.undefined_name));
 
         // Initialize RecyclerView
-        actionsRecyclerView = findViewById(R.id.recycler_view_actions);
+        RecyclerView actionsRecyclerView = findViewById(R.id.recycler_view_actions);
         actionsRecyclerView.setHasFixedSize(true); // Assuming fixed size for better performance
 
         // Create and set adapter for the RecyclerView
-        actionsAdapter = new ActionsAdapter(exercise.getActions(), position -> {
+        ActionsAdapter actionsAdapter = new ActionsAdapter(exercise.getActions(), position -> {
             // On click of an action, navigate to the ContentActivity
             Intent intent = new Intent(this, ContentActivity.class);
             intent.putExtra("action_index", position);

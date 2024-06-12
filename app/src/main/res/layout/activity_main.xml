@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
@@ -8,11 +9,11 @@
 
     <!-- Main Content -->
     <LinearLayout
-        android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/dark_blue"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingTop="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -48,26 +49,64 @@
                 android:textColorHint="@color/blue_low_alpha" />
         </LinearLayout>
 
-        <include layout="@layout/component_banner" />
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
 
-        <include layout="@layout/component_separator" />
+            <include layout="@layout/component_banner" />
 
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
+            <include layout="@layout/component_separator" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_exercises"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:paddingHorizontal="40dp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_view_exercises"
+            android:id="@+id/recycler_view_search"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:overScrollMode="never"
-            android:paddingHorizontal="40dp" />
+            android:layout_height="match_parent"
+            android:visibility="gone" />
 
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
+        <LinearLayout
+            android:id="@+id/no_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:contentDescription="@string/content_description_not_found"
+                android:src="@drawable/ic_magnifier_not"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/yekan_bakh_regular"
+                android:text="@string/no_result"
+                android:textColor="@color/white" />
+        </LinearLayout>
     </LinearLayout>
 
     <!-- Navigation Drawer -->
